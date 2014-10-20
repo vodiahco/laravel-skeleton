@@ -1,0 +1,55 @@
+{
+	"name": "ddata/laravel-skeleton",
+	"description": "The Laravel Framework skeleton app with default scaffolding.",
+	"keywords": ["framework", "laravel"],
+	"license": "MIT",
+    "authors": [
+        {
+            "name": "Victor",
+            "email": "vodiahco1@yahoo.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vodiahco/laravel-skeleton.git"
+        }
+    ],
+	"require": {
+		"laravel/framework": "4.2.*",
+        "ddata/user-manager": "dev-master",
+        "ddata/user-album": "dev-master",
+        "twitter/bootstrap": "*"
+	},
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "*",
+        "way/generators": "~2.0"
+    },
+	"autoload": {
+		"classmap": [
+			"app/commands",
+			"app/controllers",
+			"app/models",
+			"app/database/migrations",
+			"app/database/seeds",
+			"app/tests/TestCase.php"
+		]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-update-cmd": [
+			"php artisan clear-compiled",
+			"php artisan optimize"
+		],
+		"post-create-project-cmd": [
+			"php artisan key:generate"
+		]
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "stable"
+}

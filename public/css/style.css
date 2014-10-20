@@ -1,0 +1,113 @@
+body{
+    margin-top: 60px;
+    font-family:'Lucida Grande','Lucida Sans',Verdana,sans-serif;font-size:14px;
+}
+
+.padding-large{
+    padding: 20px;
+}
+
+.margin-bottom-small{
+    margin-bottom: 5px;
+}
+
+
+.padding{
+    padding: 10px;
+}
+
+.padding-left{
+    padding-left: 10px;
+}
+.margin{
+    margin: 10px;
+}
+.margin-top{
+    margin-top: 10px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+.margin-left{
+    margin-left: 10px;
+}
+
+.border-top{
+    border-top: 1px solid #ddd;
+}
+.border-bottom{
+    border-bottom: 1px solid #ddd;
+}
+
+.border-left{
+    border-left: 1px solid #ddd;
+}
+
+.border-right{
+    border-right: 1px solid #ddd;
+}
+.grey{
+    color: #666;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+.site_thumbnail{
+    width: 80px;
+}
+.overflow{
+    overflow: auto;
+}
+
+.profile_photo{
+    width: 80px;
+}
+.borderline-bottom{
+    border-bottom: 1px solid #ddd;
+}
+
+
+.rounded {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+
+pre{
+    background: none;
+    border: none;
+}
+pre .pre{
+    font-family:'Lucida Grande','Lucida Sans',Verdana,sans-serif;font-size:13px;
+}
+
+.border-fb{
+    border: 1px solid #ccc;
+}
+
+.bg-light-grey{
+   background-color: #f8f8f8;
+}
+
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
+
+.menu_icon,.articles_icon {
+    width: 22px;
+    margin-right: 10px;
+}
+
+
+
+.icon_small{
+    width: 16px;
+    margin-right: 10px;
+}
+.green{
+    color: green;
+}
