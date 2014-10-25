@@ -1,5 +1,6 @@
 <?php
 use App\Models\User;
+use App\Models\Photo;
 
 class DatabaseSeeder extends Seeder {
 	/**
@@ -10,9 +11,11 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
         User::truncate();
+        Photo::truncate();
 		Eloquent::unguard();
 
 		 $this->call('UserTableSeeder');
+        $this->call('AlbumTableSeeder');
 	}
 
 }

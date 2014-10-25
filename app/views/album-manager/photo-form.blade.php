@@ -1,3 +1,6 @@
+@extends('layout.layout')
+
+@section('content')
 <div class="blog-post">
     <h2 class="blog-post-title">Update App logo</h2>
             
@@ -10,3 +13,5 @@
     {{ Form::submit('Upload photo', array('class'=>'btn btn-success margin-top'))}}
     
 {{ Form::close() }}
+</div>
+@stop

@@ -19,7 +19,7 @@ class UserTableSeeder extends \Illuminate\Database\Seeder {
                 'email' => $faker->email,
                 'first_name' => $faker->firstName,
                 'last_name' => $faker->lastName,
-                'email' => $faker->email,
+                'password' => \Illuminate\Support\Facades\Hash::make('password'),
                 'hashname' => $faker->md5,
                 'identifier' => $faker->md5,
                 'is_active' => 1,

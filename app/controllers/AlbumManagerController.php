@@ -1,14 +1,14 @@
 <?php
-namespace Ddata\UserAlbum\Controllers;
+namespace App\Controllers;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Config;
 use Intervention\Image\Facades\Image;
 use Illuminate\Support\Facades\Redirect;
-use Ddata\UserAlbum\Models\Photo;
+use App\Models\Photo;
 use Illuminate\Support\Facades\Event;
-use Ddata\UserAlbum\Events\Events;
+use App\Events\Events;
 
 
 /**
@@ -16,21 +16,21 @@ use Ddata\UserAlbum\Events\Events;
  *
  * @author victor
  */
-class AlbumController extends \App\Controllers\BaseHttpController
+class AlbumManagerController extends \App\Controllers\BaseHttpController
 {
     public function getProfilePhoto()
     {
-        return View::make('user-album::user.photo-form');
+        return View::make('album-manager.photo-form');
     }
     
     public function postProfilePhoto()
     {
-        if (Input::has('photo') && Input::file('photo')->isValid()) {
+        if (Input::hasFile('photo') && Input::file('photo')->isValid()) {
                 $file = Input::file('photo');
                 $fileExtension = $file->getClientOriginalExtension();
                 $fileSize = $file->getSize() / (1000 * 1000);
                 $filePath = $file->getPathname();
-                $imageConfig = Config::get('user-album::image');
+                $imageConfig = Config::get('image');
                 $sizes = $imageConfig['sizes'];
                 $imageQuality = $imageConfig['quality'];
                 $minWidth = $imageConfig['minWidth'];

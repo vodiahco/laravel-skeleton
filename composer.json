@@ -17,8 +17,7 @@
     ],
 	"require": {
 		"laravel/framework": "4.2.*",
-        "ddata/user-manager": "dev-master",
-        "ddata/user-album": "dev-master",
+        "intervention/image": "*",
         "twitter/bootstrap": "*"
 	},
     "require-dev": {

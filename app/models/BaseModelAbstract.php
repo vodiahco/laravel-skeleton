@@ -23,7 +23,6 @@ abstract class BaseModelAbstract extends Eloquent
     const CREATED_AT = "date_created";
     const USER = 1;
     const ADMIN = 2;
-    const UPLOAD_DIR = "uploads/logo/";
     
     protected $page = 1;
     protected $limit = 100;
