@@ -22,19 +22,34 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        @section('notification')
-           @include('layout.fragments.notification')
-         @show
-         @section('header')
-         @show
+        
          
          
             
-         @yield('content')
+        @section('body')
+            @section('header')
+           
+            @show
+            @section('notification')
+                @include('layout.fragments.notification')
+            @show
+
+            <div class="container">
+                @section('content')
                 
-         @section('footer')
-           @include('layout.fragments.footer')
+                @show
+            </div>
+            
+
+
+
+            @section('footer')
+                @include('layout.fragments.footer')
+            @show
+
          @show
+                
+        
             
         
          @section('javascript')

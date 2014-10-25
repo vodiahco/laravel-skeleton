@@ -1,7 +1,7 @@
 <?php
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder {
-
 	/**
 	 * Run the database seeds.
 	 *
@@ -9,9 +9,10 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
+        User::truncate();
 		Eloquent::unguard();
 
-		// $this->call('UserTableSeeder');
+		 $this->call('UserTableSeeder');
 	}
 
 }
